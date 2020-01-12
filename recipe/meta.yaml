@@ -32,6 +32,7 @@ requirements:
     - r-pixmap
     - r-plotrix
     - r-scatterplot3d
+    - r-gwidgets
   run:
     - r-base
     - r-desolve
@@ -41,6 +42,7 @@ requirements:
     - r-pixmap
     - r-plotrix
     - r-scatterplot3d
+    - r-gwidgets
 
 test:
   commands:
