@@ -1,4 +1,4 @@
-{% set version = '1.5-5' %}
+{% set version = "1.6-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/asbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/asbio/asbio_{{ version }}.tar.gz
-  sha256: e7c43e871d91bbff3f887edc988b354a44a42559619f42cb1d0aa89a1642035b
+  sha256: 863be0b25b4ec229a0ccf6cca6849f12e6d55340582e9d18ceb1d9410e03163a
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
