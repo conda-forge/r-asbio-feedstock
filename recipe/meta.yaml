@@ -1,4 +1,4 @@
-{% set version = "1.6-1" %}
+{% set version = "1.6-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/asbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/asbio/asbio_{{ version }}.tar.gz
-  sha256: 863be0b25b4ec229a0ccf6cca6849f12e6d55340582e9d18ceb1d9410e03163a
+  sha256: 01b63869ae850e0c83afc5ff0222570e830fe1b74089e4a58a8138cf51006395
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -52,10 +52,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=asbio
   license: GPL (>= 2)
-  summary: 'Contains functions from: Aho, K. (2014) Foundational and Applied Statistics for Biologists
-    using R.  CRC/Taylor and Francis, Boca Raton, FL, ISBN: 978-1-4398-7338-0.'
+  summary: 'Contains functions from: Aho, K. (2014) Foundational and Applied Statistics for Biologists using R.  CRC/Taylor and Francis, Boca Raton, FL, ISBN: 978-1-4398-7338-0.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
