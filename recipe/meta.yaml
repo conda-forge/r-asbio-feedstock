@@ -24,7 +24,7 @@ requirements:
   build:
     - {{posix}}zip               # [win]
   host:
-    - r-base
+    - r-base >=3.6
     - r-desolve
     - r-lattice
     - r-multcompview
@@ -36,7 +36,7 @@ requirements:
     - r-tkrplot
     - r-gwidgetstcltk
   run:
-    - r-base
+    - r-base >=3.6
     - r-desolve
     - r-lattice
     - r-multcompview
