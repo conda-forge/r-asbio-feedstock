@@ -1,4 +1,4 @@
-{% set version = "1.8-1" %}
+{% set version = "1.8-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/asbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/asbio/asbio_{{ version }}.tar.gz
-  sha256: f1963011d48caf115784ae42642826943ce88db6abef04266ad751f8cf16a19b
+  sha256: 6afa885c1a8345e3462d0fb70c27e24b0f2c2e97f456d7f1cc5efd427f5ac015
 
 build:
   merge_build_host: true  # [win]
