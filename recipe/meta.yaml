@@ -1,6 +1,5 @@
 {% set version = "1.9-7" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-asbio
@@ -13,8 +12,7 @@ source:
   sha256: c2970075d4771c39c66eb6e50818f0702fe797aa24dfa5fdff9e03d1014b5a15
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
