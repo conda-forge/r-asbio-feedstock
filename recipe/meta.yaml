@@ -1,4 +1,4 @@
-{% set version = "1.9-7" %}
+{% set version = "1.11" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/asbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/asbio/asbio_{{ version }}.tar.gz
-  sha256: c2970075d4771c39c66eb6e50818f0702fe797aa24dfa5fdff9e03d1014b5a15
+  sha256: 247c8aa0a5fefebd37194e54f9b3c45da61bdabfdd4361a1b910b77e3f656468
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
