@@ -1,4 +1,4 @@
-{% set version = "1.12-1" %}
+{% set version = "1.12-2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/asbio_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/asbio/asbio_{{ version }}.tar.gz
-  sha256: ca354ee187f86822974f58e19fb44326c25459851fd801a8d655b48f5f16d3a1
+  sha256: 5771d8a353a60ee0d515281efb872dcf1b7e025e1c5f334a41546293fca377dd
 
 build:
   number: 0
