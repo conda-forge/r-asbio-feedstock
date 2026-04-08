@@ -17,13 +17,17 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-combinat
     - r-desolve
     - r-gwidgets2
     - r-gwidgets2tcltk
@@ -36,7 +40,6 @@ requirements:
     - r-tkrplot
   run:
     - r-base
-    - r-combinat
     - r-desolve
     - r-gwidgets2
     - r-gwidgets2tcltk
@@ -54,7 +57,7 @@ test:
     - "\"%R%\" -e \"library('asbio')\""  # [win]
 
 about:
-  home: https://CRAN.R-project.org/package=asbio
+  home: https://kenaho.aws.cose.isu.edu/shiny/apps/asbio_shiny.Rmd
   license: GPL-2.0-or-later
   summary: 'Contains functions from: Aho, K. (2014) Foundational and Applied Statistics for Biologists using R.  CRC/Taylor and Francis, Boca Raton, FL, ISBN: 978-1-4398-7338-0.'
   license_family: GPL3
