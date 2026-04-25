@@ -3,7 +3,7 @@ About r-asbio-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-asbio-feedstock/blob/main/LICENSE.txt)
 
-Home: https://CRAN.R-project.org/package=asbio
+Home: https://kenaho.aws.cose.isu.edu/shiny/apps/asbio_shiny.Rmd
 
 Package license: GPL-2.0-or-later
 
